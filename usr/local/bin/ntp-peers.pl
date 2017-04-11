@@ -14,7 +14,7 @@ if (($num_args != 2)and(!($command =~ /discovery/))) {
 }
 $dpeer = $ARGV[1];
 
-my @pout = `$cmd -n -c peers localhost | awk 'match(\$1, /[0-9\\.]+/) {print \$1,\$3,\$8,\$9,\$10;}'`;
+my @pout = `$cmd -n -c peers localhost | awk 'match(\$1, /[0-9\\.]+/) {print \$1,\$(NF-7),\$(NF-2),\$(NF-1),\$NF;}'`;
 
 if ($command =~ /discovery/) {
   my $first = 1;

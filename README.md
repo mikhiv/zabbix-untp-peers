@@ -35,6 +35,7 @@ This Template has triggers, wich will send notification messages when monitored 
 * Restart Zabbix-agent server by command `service zabbix-agent restart`
 * Import to Zabbix server `zbx_ntp_peers_template.xml` template file and add this template to Zabbix server host.
 
+
 ### License
 
 [GNU GPL v3 License] (https://www.gnu.org/licenses/gpl.html)
